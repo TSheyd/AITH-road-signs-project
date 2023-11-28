@@ -8,13 +8,13 @@ AI Talent Hub Deep Learning Practice Course - road signs detection
 - [Dataset](#dataset)
 - [Model architecture](#model-architecture)
 - [MVP](#mvp)
-- Sources
-
 
 ## Dataset
+We used [russian-traffic-signs-recognition Image Dataset](https://universe.roboflow.com/mguogareva/russian-traffic-signs-recognition/dataset/3) for final model. See more in [second branch](https://github.com/TSheyd/AITH-road-signs-project/tree/grishaechka)
+
 
 ## Model Architecture
-For model, YOLOv8 was used.
+For model, YOLOv8 nano was used. Check the [second branch](https://github.com/TSheyd/AITH-road-signs-project/tree/grishaechka) for more info on training and experiments
 
 ## MVP
 Although the app is supposed to run on mobile, within this course we do a simpler approach with a demo web app. There you can upload a video, get it processed and see the results. 
