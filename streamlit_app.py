@@ -7,12 +7,9 @@ from ultralytics import YOLO
 import moviepy.editor as moviepy
 
 # Config
-MODEL_PATH = "weights/sample.pt"
+MODEL_PATH = "weights/best.pt"
 INFERENCE_CONFIG = {
-    "conf": 0.01,
-    "hide_conf": True,
-    "max_det": 1,
-    "classes": 0,
+    "hide_conf": False,
     "save": True,
     "project": "video_cache",
 }
