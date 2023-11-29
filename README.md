@@ -21,8 +21,7 @@ Although the app is supposed to run on mobile, within this course we do a simple
 The web app provides the processed video, as well as the list of detected items
 
 ### Deployment
-1. Make sure you have Python 3.8 or newer installed. We used 3.11.
-2. Install required packages with `pip install requirements.txt`
-3. Run Streamlit app: `streamlit run path_to_project\AITH-road-signs-project\streamlit_app.py`
-4. If browser window did not open automatically, go to `http://localhost:8501/`
-
+1. Launch Docker engine
+2. Run `docker build -t streamlit .` in directory with Dockerfile
+3. Launch application with `docker run -p 8501:8501 streamlit`
+4. Go to `http://localhost:8501/` to see the app in action
