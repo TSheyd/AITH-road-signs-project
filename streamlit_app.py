@@ -78,12 +78,5 @@ if uploaded_file is not None and not st.session_state['video_processed']:
 
 # Layout for processed video
 if st.session_state['video_processed']:
-    output_vid, detections_col = st.columns([1, 1])
-
-    with output_vid:
-        st.header("Processed Video")
-        st.video(st.session_state['video_path'])
-
-    with detections_col:
-        st.header("Detected Signs")  # todo
-        st.table(pd.DataFrame(columns=['timestamp', 'sign', 'importance', 'confidence']))
+    st.header("Processed Video")
+    st.video(st.session_state['video_path'])
